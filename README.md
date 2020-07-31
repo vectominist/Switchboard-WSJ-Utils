@@ -1,6 +1,9 @@
 # Switchboard-WSJ-Utils
 Utilities for preprocessing the Switchboard and WSJ corpora in Python3
 
+## Updates
+* 2020.07.31 : [wTIMIT](http://www.isle.illinois.edu/speech_web_lg/data/wTIMIT/index.shtml) support
+
 ## Instructions
 Before using the utilities, some requirements must meet first:
 * Install Python packages:
@@ -25,4 +28,11 @@ Before using the utilities, some requirements must meet first:
 Convert `.wv1` files in `WSJ0` and `WSJ1` to `.wav` files.
 ```
 python3 sph2wav.py .wv1 <path to sph2pipe> <path to WSJ0/WSJ1> WSJ
+```
+
+### wTIMIT Corpus
+
+Convert `.WAV` files in `wTIMIT` to `.wav` files.
+```
+python3 sph2wav.py .WAV <path to sph2pipe> <path to wTIMIT> wTIMIT
 ```
